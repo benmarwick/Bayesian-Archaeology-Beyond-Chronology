@@ -12,7 +12,7 @@ knitr::include_graphics(here::here("output/figures/figure1.png"))
 A famous Bayesian archaeologist, an authority on the Monico, has excavated a post-contact period site associated with this culture. Excavation work at the site, named Monico-1, has yielded an impressive faunal assemblage among the widely diverse material culture. The archaeofauna is composed of two species of animals: “dog” and “coyote.” Individual animals of both species are represented by complete skeletons. Consequently, in this report the archaeologist uses the term "individual" to refer to complete dogs or coyotes. Likewise, when the archaeologist mentions "the number of" dogs or coyotes, they mean a count of complete individuals of the representative species. So far, the archaeologist has identified 100 such individuals and assigned them to their respective species. Based on the observations, the assemblage is composed of 71 dogs and 29 coyotes (Figure 2). 
 
 ```{r fig2, echo=FALSE, message=FALSE, warning=FALSE, fig.align = "center",out.width= "\\textwidth", fig.cap="The Bayesian Archaeologist and their crew excavate the Monico-1 site."}
-knitr::include_graphics("./output/figures/figure2.png")
+knitr::include_graphics(here::here("output/figures/figure2.png"))
 ```
 
 However, the archaeologist has also excavated a bone fragment that is difficult to identify. The archaeologist wishes to know the most probable species to which this fragment belongs.
