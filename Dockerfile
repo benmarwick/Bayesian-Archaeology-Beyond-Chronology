@@ -14,13 +14,7 @@ COPY . /Bayesian-Archaeology-Beyond-Chronology
 
 RUN . /etc/environment \
 
-  && R -e "install.packages(c('remotes', 'kableExtra', 'HDInterval', 'ggrepel'), repos = c(CRAN = 'https://cloud.r-project.org'))" \
-
-  
-
-
-
-
+  && R -e "install.packages(c('here', 'kableExtra', 'HDInterval', 'ggrepel'), repos = c(CRAN = 'https://cloud.r-project.org'))" \
 
   # render the manuscript into a docx, you'll need to edit this if you've
 
