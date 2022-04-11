@@ -155,13 +155,13 @@ d<-data %>%
   )+
   coord_cartesian(xlim = c(-0.005,1))
 
-ggsave(filename = "../output/figures/figure3.png", plot = d, width = 8, height = 5, units = 'in', dpi = 400)
+ggsave(filename = here::here("output/figures/figure3.png"), plot = d, width = 8, height = 5, units = 'in', dpi = 400)
 ```
 
 The archaeologist then plots the distribution of the proportion of dogs butchered at Monico sites (Table 5) in order to visualize the resulting prior knowledge that can be derived from this dataset (Figure 3).
 
 ```{r fig3, echo=FALSE, message=FALSE, warning=FALSE, fig.align = "center",out.width= "\\textwidth", fig.cap="Simple representation of the distribution of the archaeologist’s prior probabilities of the estimates of $\\theta$ (theta), the proportion of dogs with butchery marks at Monico archaeological sites (from Table 5). Note that small values of $\theta$ have a higher prior probability than larger ones."}
-knitr::include_graphics("./output/figures/figure3.png")
+knitr::include_graphics(here::here("output/figures/figure3.png"))
 ```
 
 Recall that in the Bayesian framework, one needs the likelihood ($P(x|\theta)$), the probability of the data ($P(x)$), and the prior probability of the hypothesis ($P(\theta)$) to compute the posterior probability of the hypothesis that $\theta$ > 0.50, given the data ($P(\theta > 0.5|x)$). Figure 3 illustrates the prior probability, $P(\theta)$, for different $\theta$ values.
@@ -247,12 +247,12 @@ data_plot4 %>%
   )+
   coord_cartesian(xlim = c(0,1))
 
-ggsave(filename = "../output/figures/figure4.png",  width = 8, height = 5, units = 'in', dpi = 400)
+ggsave(filename = here::here("output/figures/figure4.png"),  width = 8, height = 5, units = 'in', dpi = 400)
 ```
 
 ```{r fig4, echo=FALSE, message=FALSE, warning=FALSE, fig.align = "center",out.width= "\\textwidth", fig.cap="Distribution of standardized likelihood values corresponding to variable quantities of $\\theta$ (theta) across the 0, 1 range. Dashed red line indicates the value of $\\theta$ that maximizes the likelihood of the data. This is known as the Maximum Likelihood estimate of $\\theta$" }
 
-knitr::include_graphics("./output/figures/figure4.png")
+knitr::include_graphics(here::here("output/figures/figure4.png"))
 ```
 ^[It should be noted here that while the likelihood renders values in the 0-1 scale, it is not necessarily a probability function that adds up (integrates) to 1. To plot the likelihood on the same scale as the prior and the posterior distributions, all distributions have been normalized (rescaled) to sum to 1]
 
@@ -310,11 +310,11 @@ data_plot5 %>%
   )+
   coord_cartesian(xlim = c(-0.005,1))
 
-ggsave(filename = "../output/figures/figure5.png",  width = 8, height = 5, units = 'in', dpi = 400)
+ggsave(filename = here::here("output/figures/figure5.png"),  width = 8, height = 5, units = 'in', dpi = 400)
 ```
 
 ```{r fig5, echo=FALSE, message=FALSE, warning=FALSE, fig.align = "center",out.width= "\\textwidth", fig.cap="Standardized Beta probability model, with parameters $a$ = 1.5, and $b$ = 16, representing the archaeologist’s prior probabilities depicted in Figure 1. Note the similarity in shpae, and in particular the location of the mode and range of values, to Figure 1."}
-knitr::include_graphics("./output/figures/figure5.png")
+knitr::include_graphics(here::here("output/figures/figure5.png"))
 ```
 
 ### The posterior
@@ -415,11 +415,11 @@ data_plot6 %>%
     legend.position = "none"
   )
 
-ggsave(filename = "../output/figures/figure6.png",  width = 8, height = 5, units = 'in', dpi = 400)
+ggsave(filename = here::here("output/figures/figure6.png"),  width = 8, height = 5, units = 'in', dpi = 400)
 ```
 
 ```{r fig6, echo=FALSE, message=FALSE, warning=FALSE,fig.align = "center", out.width= "\\textwidth", fig.cap="Distributions of the archaeologist’s prior probabilities, the likelihood of the data, and the posterior probabilities across a fine grid of values of theta. All probability densities are standardized by a normalizing constant."}
-knitr::include_graphics("./output/figures/figure6.png")
+knitr::include_graphics(here::here("output/figures/figure6.png"))
 ```
 
 
@@ -478,12 +478,12 @@ data_plot7 %>%
   )+
   coord_cartesian(xlim = c(0,0.76))
 
-ggsave(filename = "../output/figures/figure7.png",  width = 8, height = 5, units = 'in', dpi = 400)
+ggsave(filename = here::here("output/figures/figure7.png"),  width = 8, height = 5, units = 'in', dpi = 400)
 ```
 
 
 ```{r fig7, echo=FALSE, message=FALSE, warning=FALSE, fig.align = "center",out.width= "\\textwidth",fig.cap="Posterior probability distribution with the blue dotted line showing the 50th-percentile estimate $(0.38)$. The solid red line depicts the 90\\% probability density interval $(0.23--0.53)$."}
-knitr::include_graphics("./output/figures/figure7.png")
+knitr::include_graphics(here::here("output/figures/figure7.png"))
 ```
 
 Unlike the NHST framework, the Bayesian posterior probability enables the archaeologist
