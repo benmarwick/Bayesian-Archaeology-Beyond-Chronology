@@ -1,11 +1,9 @@
-# Monico-Culture
+# The Monico Culture and Beyond Chronology, Using Bayesian Inference to Evaluate Hypotheses in Archaeology. 
 
 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/benmarwick/Bayesian-Archaeology-Beyond-Chronology/main?urlpath=rstudio)
 [![.github/workflows/knit-in-docker.yml](https://github.com/benmarwick/Bayesian-Archaeology-Beyond-Chronology/actions/workflows/knit-in-docker.yml/badge.svg)](https://github.com/benmarwick/Bayesian-Archaeology-Beyond-Chronology/actions/workflows/knit-in-docker.yml)
-
-Beyond Chronology, Using Bayesian Inference to Evaluate Hypotheses in Archaeology
 
 Please cite these materials as:
 
